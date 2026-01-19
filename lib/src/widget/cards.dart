@@ -8,6 +8,7 @@ class Cards extends StatelessWidget {
     required this.backColorIcon,
     required this.iconbt,
     required this.title,
+    
     required this.txCentral,
     
     this.dwnTx,
@@ -18,8 +19,8 @@ class Cards extends StatelessWidget {
   final Color backColor ;
   final Color backColorIcon ;
   final Icon iconbt;
-  final String title ;
-  final String txCentral ;
+  final Text title ;
+  final Text txCentral ;
   final String? dwnTx;
 
   @override
@@ -39,10 +40,9 @@ class Cards extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text(
+                
                   title,
-                  style: TextStyle(fontSize: 14, color: Colors.white),
-                ),
+                
                 Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
@@ -59,14 +59,10 @@ class Cards extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.only(left: 15.0),
-            child: Text(txCentral,
-            style: TextStyle(
-              fontSize: 30,
-              fontWeight: FontWeight.bold,
-              color: Colors.white,
+            child: txCentral,
+            
             ),
-            ),
-          ),
+          
           Padding(
             padding: const EdgeInsets.all(15.0),
             child: Text(dwnTx ?? '',
