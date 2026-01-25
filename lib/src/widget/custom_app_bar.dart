@@ -1,3 +1,4 @@
+import 'package:daily__income/src/widget/CardRegistrationDay.dart';
 import 'package:flutter/material.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
@@ -45,7 +46,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
             child: Row(
               children: [
                 IconButton(
-                  onPressed: () {},
+                  onPressed: () =>mostrarCard(context),
                   color: const Color.fromARGB(255, 255, 255, 255),
                   icon: Icon(Icons.add),
                 ),
